@@ -1,0 +1,23 @@
+<button id="mulai">Masuk Galeri</button>
+
+<script>
+document.getElementById("mulai").onclick = async () => {
+    if (document.documentElement.requestFullscreen) {
+        await document.documentElement.requestFullscreen();
+    }
+
+    // Sembunyikan tombol
+    document.getElementById("mulai").style.display = "none";
+
+    // Mulai prank di sini
+    mulaiPrank();
+};
+
+function mulaiPrank(){
+    document.body.innerHTML = `
+        <h1 style="color:red;text-align:center;margin-top:40vh;">
+            ⚠ SYSTEM ERROR ⚠
+        </h1>
+    `;
+}
+</script>
